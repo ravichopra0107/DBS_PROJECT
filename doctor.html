@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles2.css">
+    <title>Hospital Setu</title>
+</head>
+<body>
+    <div class="content">
+    <h2>Hi there!</h2><h2>Details about your patients, nurses and all that you want is just a click away.</h2>
+    
+    </div>
+    <form action="./doctor/q_result" method="POST">
+        <input type="radio" name="query" id="Patients" value="Patients">
+        <label for="Patients">Patients</label>
+        <input type="radio" name="query" id="Nurses" value="Nurses">
+        <label for="Nurses">Nurses</label>
+        <input type="radio" name="query" id="Department" value="Department">
+        <label for="Department">Department</label>
+        <input type="radio" name="query" id="HOD" value="HOD">
+        <label for="HOD">HOD</label>
+        <div class="section2 visible">
+        <h3>Your ID:</h3>
+        <input type="text" name="ID" id="ID"><br>
+        <button type="submit" name="submit">Submit</button>
+        </div>
+    </form>
+    <script src="./index2.js"></script>
+</body>
+</html>
